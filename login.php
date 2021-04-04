@@ -14,20 +14,20 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
         $row=pg_fetch_assoc($data);
         switch ($row[roleid]) {
            	case 1:
-           		header("Location:https://magazinesubmissionsystem.herokuapp.com/student.php");
+           		header("Location:student.php");
            		break;
            	
            	case 2:
-           		header("Location:https://magazinesubmissionsystem.herokuapp.com/teacher.php");
+           		header("Location:teacher.php");
            		break;
            	case 3:
-           		header("Location:https://magazinesubmissionsystem.herokuapp.com/manager.php");
+           		header("Location:manager.php");
            		break;
            	case 4:
-           		header("Location:https://magazinesubmissionsystem.herokuapp.com/admin.php");
+           		header("Location:admin.php");
            		break;
            	case 5:
-           		header("Location:https://magazinesubmissionsystem.herokuapp.com/generalcontributionlist.php");
+           		header("Location:generalcontributionlist.php");
            		break;
            }   
     }else{
