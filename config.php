@@ -1,5 +1,6 @@
 <?php
-$host = "localhost";
+$db = parse_url( getenv("DATABASE_URL") );
+$host = $db["host"]
 $port = "5433";
 $dbname = "postgres";
 $user = "postgres";
